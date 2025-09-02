@@ -26,15 +26,13 @@ public class UserServices
 	public User getUser(int id)
 	{
 		Optional<User> optional = this.userRepository.findById(id);
-		User user = optional.get();
-		return user;
+  return optional.get();
 	}
 	
 	//Get Single User By Email
 	public User getUserByEmail(String email)
 	{
-	 User user=	this.userRepository.findUserByUemail(email);
-	 return user;
+  return this.userRepository.findUserByUemail(email);
 	}
 	
 	//Update

@@ -26,8 +26,7 @@ public class UserServices
 	public User getUser(int id)
 	{
 		Optional<User> optional = this.userRepository.findById(id);
-		User user = optional.get();
-		return user;
+  return optional.get();
 	}
 	
 	//Get Single User By Email

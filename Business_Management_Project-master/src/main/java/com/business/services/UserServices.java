@@ -32,8 +32,7 @@ public class UserServices
 	//Get Single User By Email
 	public User getUserByEmail(String email)
 	{
-	 User user=	this.userRepository.findUserByUemail(email);
-	 return user;
+  return this.userRepository.findUserByUemail(email);
 	}
 	
 	//Update

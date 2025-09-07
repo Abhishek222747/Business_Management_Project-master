@@ -105,7 +105,7 @@ public class VulnerableCodeExamples {
     // 14. Insecure comparison - Bug
     public boolean isValidUser(String username, String password) {
         // Using == instead of .equals() for string comparison
-        return (username == "admin" && password == "admin123");
+        return (username.equals("admin") && password.equals("admin123"));
     }
     
     // 15. Logging sensitive information - Security vulnerability

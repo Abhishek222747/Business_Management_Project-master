@@ -9,8 +9,6 @@ import java.util.logging.Logger;
 public class VulnerableCodeExamples {
     
     // 1. Hardcoded credentials - Security vulnerability
-    private static final String DB_PASSWORD = "admin123";
-    private static final String API_KEY = "sk_test_1234567890abcdefghijklmnopqrstuvwxyz";
     
     // 2. Null pointer dereference - Bug
     public String getUserName(User user) {
@@ -105,7 +103,7 @@ public class VulnerableCodeExamples {
     // 14. Insecure comparison - Bug
     public boolean isValidUser(String username, String password) {
         // Using == instead of .equals() for string comparison
-        return (username == "admin" && password == "admin123");
+        return (username.equals("admin") && password.equals("admin123"));
     }
     
     // 15. Logging sensitive information - Security vulnerability

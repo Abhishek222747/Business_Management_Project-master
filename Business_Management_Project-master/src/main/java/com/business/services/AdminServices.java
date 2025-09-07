@@ -24,8 +24,7 @@ public class AdminServices
 	public Admin getAdmin(int id)
 	{
 		Optional<Admin> optional = this.adminRepository.findById(id);
-		Admin admin=optional.get();
-		return admin;
+  return optional.get();
 	}
 //Update Admin
 	public void update(Admin admin ,int id)

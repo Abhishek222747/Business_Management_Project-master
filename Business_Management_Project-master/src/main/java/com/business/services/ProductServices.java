@@ -32,8 +32,7 @@ public class ProductServices
 	public Product getProduct(int id)
 	{
 		Optional<Product> optional = this.productRepository.findById(id);
-		Product product=optional.get();
-		return product;
+  return optional.get();
 	}
 
 	//update Product
